@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="selection.css">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Lobster&display=swap" rel="stylesheet">
+    <title>Sorting Algorithm Visualiser</title>
+</head>
+<body>
+    <h1 style="justify-content: center; align-items: center;">Sorting Algorithm Visualiser</h1>
+    <p>Hello! Welcome to Sorting Algorithm Visualiser! Get started to view how sorting happens in algorithm of your choice!</p>
+        <div id="instructions"><h4 style="justify-content: center; align-items: center;"> Instructions:</h4>
+        <ol type="1">
+            <li> Enter a value for the number of array elements you would like to see to be sorted</li>
+            <li>Select you choice of sorthing algorithm from dropdown menu</li>
+            <li> Click the 'Generate New Array' button</li>
+            <li> Click  'Visualize!' button to start your visualisation and see information related to the sorting algorithm!</li>
+        </ol></div>
+    <div class="container">
+        <div class="topbar">
+            <div id="selection">
+                <div id="choice_selection">
+                    <label for="choice">Select Choice of Sorting Algorithm:</label>
+                    <br><br>
+                    <select name="" id="selectAlgorithm" class="select-Algorithm">
+                        <option value="Bubble sort">Bubble sort</option>
+                        <option value="Selection sort">Selection sort</option>
+                        <option value="Quick sort">Quick sort</option>
+                        <option value="Count sort">Count sort</option>
+                    </select>
+                </div>
+                <br>
+                <div id="number_selection">
+                    <div id="generate" class="generate-new">
+                        <label id="numberlabel" for="numberBars">To Generate, select array size!</label>
+                        <br>
+                        <br>
+                        <input id="numberBars" placeholder="Enter a Number!" type="number" max="20" min="1" name="sizeArray">
+                        <button id="newnumber">Generate New Array!</button>
+                        <br>
+                        <br>
+                    </div>
+                    <div id="solve">
+                        <button id="solveButton">Visualize!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="visual" class="visual"></div>
+        <div id="infobox"></div>
+    </div>
+    <script src="selection.js" type="module"></script>
+    <script src="utility.js" type="module"></script>
+    <script src="main.js" type="module"></script>
+</body>
+</html>

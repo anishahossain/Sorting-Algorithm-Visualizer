@@ -1,0 +1,159 @@
+body{
+    font-family: "Chakra Petch";
+    background-color: #faefd9;
+}
+
+h1{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+p{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+h3{
+    display: flex;
+    margin-top: 20px;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+
+.container{
+    display: flex;
+    margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap:wrap; /* ensures that the boxes will wrap to the next line if there's not enough space */
+}
+
+#instructions{
+    border: 2px dotted #6e5219;
+    align-items: center;
+    gap: 10px;
+    padding: 20px; /* add padding inside the boxes */
+    animation: glowingborder 4s  infinite alternate;
+}
+
+#selection{
+    border: 2px dotted #6e5219;
+    display: flex; 
+    align-items: center;
+    height: 200px;
+    gap: 10px;
+
+    margin: 15px; /* add some margin between the boxes */
+    padding: 20px; /* add padding inside the boxes */
+}
+
+.visual{
+    display: flex;
+    background-color: #f0dbb0;
+    position: relative;
+    height: 300px;
+    border: 2px dotted #6e5219;
+
+}
+
+#selectAlgorithm :active {
+    background-color: lightblue;
+    color: aliceblue;
+}
+
+.bar{
+    position: absolute;
+    background-color:  #6e5219;
+    transition: all 300ms ease-out;
+    border-radius: 6px;
+    bottom: 0;
+
+}
+
+.bar.activate{
+    background: lightblue;
+    transition-property: 0.3s;
+    animation: updown 1.5s ease-in-out;
+}
+
+@keyframes updown {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+button{
+    border: 2px solid white; 
+    background-color: #a38852;
+    color: white;
+    padding: 5px;
+    font-family: "Chakra Petch";
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: white;
+    color: pink;
+}
+
+
+#selectAlgorithm{
+    border: 2px solid #a38852; 
+    background-color: #ebd8b1;
+    color: white;
+    padding: 5px;
+    font-family: "Chakra Petch";
+    color: #6e5219;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#number{
+    border: 2px solid #a38852; 
+    background-color: white;
+    height: 20px;
+}
+
+#newnumber{
+    margin: 10px;
+}
+
+@keyframes glowingborder {
+    from {
+        border-color: #dba843;
+        box-shadow: 0 0 10px white;
+    }
+    to {
+        border-color: #fadedc;
+        box-shadow: 0 0 20px #dba843;
+    }
+}
+
+.text{
+    margin: 20px;
+    display: flex;
+    background-color: #f0dbb0;
+    position: relative;
+    border: 2px dotted #6e5219;
+    align-items: flex-end;
+    gap: 10px;
+    padding: 20px; /* add padding inside the boxes */
+    animation: glowingborder 4s  infinite alternate;
+}
+
